@@ -339,6 +339,11 @@ textarea:focus, input:focus{
     font-weight: bold;
 }
 
+b {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 
 
 
