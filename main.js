@@ -15,14 +15,33 @@ window.addEventListener('scroll', () => {
     let video = document.querySelector('#video');
     header.classList.toggle('sticky', window.scrollY > 0);
     header.classList.toggle('sticky_2', window.scrollY > 10);
-    main_logo_text.classList.toggle('logo_up', window.scrollY > 0);
+    main_logo_text.classList.toggle('logo_up', window.scrollY > 0); //interesting
     video.play();
 })
 
+//Reload  Home
 
+let home_btn = document.querySelectorAll('.home_btn');
 
-let gallery_h2 = document.querySelector('#gallery_h2');
+home_btn.forEach(e => {
+    e.addEventListener('click', () => {
+        location.reload();
+    })
+});
 
-gallery_h2.addEventListener('click', () => {
-    window.open('gallery.html', '_self');
-})
+//Go to Gallery
+
+let gallery = document.querySelectorAll('.gallery_btn');
+
+gallery.forEach(e => {
+    e.addEventListener('click', () => {
+        window.open('gallery.html', '_self');
+    })
+});
+
+//Go to About
+let about_btn = document.querySelector('#about_btn');
+
+about_btn.addEventListener('click', () => {
+    window.open('about.html', '_self');
+});
