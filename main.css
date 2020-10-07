@@ -1,8 +1,11 @@
+
 body {
     background-color: black;
     margin: 0px;
     padding: 0px;
 }
+
+/* Hader */
 
 .header {
     width: 100%;
@@ -32,12 +35,28 @@ body {
     padding-left: 3rem;
 }
 
+.nav_first li:nth-child(1) {
+    cursor: pointer;
+}
+
 li {
     display: inline;
     font-size: 1.3rem;
     color: #BF953F;
     padding: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 2s all;
+}
+
+li:hover {
+    color: #AA771C;
+}
+
+a {
+    text-decoration: none;
+    color: #BF953F;
+
 }
 
 .nav_second {
@@ -53,11 +72,7 @@ li {
     height: 3rem;
 }
 
-
-
-
-
-
+/* Scroll Bar */
 
 ::-webkit-scrollbar {
     width: 0;
@@ -80,6 +95,8 @@ li {
     background: linear-gradient(to bottom, #AA771C, #BF953F);
 }
 
+/* Main Div */
+
 #main_div {
     background-color: rgba(34, 34, 34, 0.411);
     width: 100%;
@@ -101,6 +118,11 @@ li {
     animation-fill-mode: forwards;
 }
 
+#main_logo_div > img {
+    max-width: 40rem;
+    max-height: 20rem;
+}
+
 @keyframes go_logo {
     0% {
         opacity: 0;
@@ -112,23 +134,25 @@ li {
 }
 
 .main_logo_text {
-    border: 3px solid goldenrod;
-    font-size: 3rem;
-    border-radius: 20px;
-    background: linear-gradient(to top, #BF953F, #AA771C);
-    width: 25rem;
+    background: linear-gradient(to bottom, #AA771C, #BF953F);
     text-align: center;
     transition: 3s all;
     top: 17rem;
+    border: 2px solid #BF953F;
+    border-radius: 15px;
+    padding: .1rem 1rem;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 .logo_up {
     position: fixed;
     top: 0rem;
-    font-size: 1rem;
-    width: 10rem;
+    font-size: .9rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #BF953F;
 }
-
 
 #arrow_down {
     margin: 0rem auto;
@@ -160,6 +184,7 @@ li {
     }
 }
 
+/* First quote / quotes */
 
 #second_div, #fourth_div, #sixth_div, #eighth_div {
     width: 35rem;
@@ -178,6 +203,8 @@ li {
     font-family: 'Tangerine', cursive;
     margin-bottom: 2rem;
 }
+
+/* Video */
 
 #third_div {
     width: 100%;
@@ -198,6 +225,8 @@ video {
     left: 0;
 }
 
+/* Gallery */
+
 #fifth_div {
     width: 90%;
     height: 25rem;
@@ -206,6 +235,18 @@ video {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     z-index: -10;
+    cursor: pointer;
+    transition: 1s all;
+    opacity: .3;
+}
+
+#fifth_div_p {
+    content: attr(title);
+    color: #BF953F;
+    position: absolute;
+    font-size: .7rem;
+    left: 2rem;
+    font-weight: bold;
 }
 
 #fifth_div > img {
@@ -213,7 +254,7 @@ video {
     height: 100%;
     margin: 0rem;
     padding: 0rem;
-    opacity: .5;
+    opacity: .3;
     z-index: -10;
 }
 
@@ -221,16 +262,18 @@ video {
     font-size: 8rem;
     color: #BF953F;
     text-align: center;
-    margin-bottom: -22rem;
-    margin-top: 14rem;
-    opacity: .8;
+    margin-top: 10rem;
+    opacity: .4;
     z-index: 10;
-    cursor: pointer;
 }
 
-#gallery_h2:hover {
+/* Second quote */
+
+#fifth_div:hover {
     opacity: 1;
 }
+
+/* Contact */
 
 ::placeholder {
     color: #BF953F;
@@ -253,18 +296,17 @@ video {
 #contact_form {
     width: 50%;
     margin: 0px auto;
-    text-align: center;
 }
 
 #contact_form > input, textarea {
     display: block;
-    margin: 0px auto;
+    margin: 10px auto;
     width: 100%;
     border-style: none;
     margin-top: 1rem;
     background-color: black;
     border-bottom: 2px solid #BF953F;
-    text-align: center;
+    text-align: left;
     color: #BF953F;
     font-size: 1.2rem;
     padding: 1rem;
@@ -292,9 +334,13 @@ textarea:focus, input:focus{
     color: #BF953F
 }
 
+/* Last quote */
+
 #eighth_div {
-    margin-top: 25rem;
+    margin-top: 18rem;
 }
+
+/* Footer */
 
 #footer {
     width: 100%;
@@ -311,6 +357,13 @@ textarea:focus, input:focus{
     width: 15rem;
     text-align: center;
     margin: 2rem auto;
+    cursor: pointer;
+    transition: 2s all;
+}
+
+.main_logo_text_footer:hover {
+    background: black;
+    color: goldenrod;
 }
 
 #footer_social {
@@ -339,16 +392,14 @@ textarea:focus, input:focus{
     font-weight: bold;
 }
 
+#company {
+    margin-bottom: 20px;
+}
+
 b {
     font-weight: bold;
     font-size: 1.2rem;
 }
-
-
-
-
-
-
 
 
 /* Gallery Page */
@@ -424,4 +475,52 @@ b {
     opacity: 1;
     cursor: pointer;
     transform: scale(1.4);
+}
+
+#go_back {
+    color: #BF953F;
+    position: absolute;
+    font-size: 2rem;
+    margin: 2rem;
+    margin-right: 3rem;
+    transition: 2s all;
+    left: 0;
+}
+
+#go_back:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+#go_back > i {
+    padding-bottom: -1rem;
+    margin-top: -1rem;
+}
+
+/* About Page */
+
+.machine {
+    max-width: 6rem;
+    max-height: 8rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    position: absolute;
+}
+
+.about_txt {
+    color: #AA771C;
+    padding: 5rem;
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Tangerine', cursive;
+
+}
+
+
+
+                                            /*Media Quotes */
+
+@media screen and (max-width: 700px) {
+
 }
