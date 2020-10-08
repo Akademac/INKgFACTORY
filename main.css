@@ -615,6 +615,10 @@ b {
         padding-right: .1rem;
     }
 
+    #gallery_btn {
+        padding-left: 1.2px!important;
+    }
+
     /* Gallery */
 
     
@@ -651,8 +655,6 @@ b {
         width: 15rem;
     }
 
-
-    
     /* Contact */
 
     #contact_h2 {
@@ -676,12 +678,4 @@ b {
         margin-top: 10rem;
     }
 
-}
-
-@media screen and (max-width: 325px) {
-    /* Header */
-
-    #gallery_btn {
-        padding-left: 1.2px!important;
-    }
 }
