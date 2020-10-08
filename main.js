@@ -9,14 +9,14 @@ window.onscroll = function() {
 
 //nav bar 
 
+let video = document.querySelector('#video');
+
 window.addEventListener('scroll', () => {
     let header = document.querySelector('.header');
     let main_logo_text = document.querySelector('.main_logo_text');
-    let video = document.querySelector('#video');
     header.classList.toggle('sticky', window.scrollY > 0);
     header.classList.toggle('sticky_2', window.scrollY > 10);
     main_logo_text.classList.toggle('logo_up', window.scrollY > 0); //interesting
-    video.play();
 })
 
 //Reload  Home
@@ -32,13 +32,16 @@ home_btn.forEach(e => {
 let windowWidth = window.innerWidth;
 let play = document.querySelector('.fa-play');
 
-if(windowWidth < 500) {
-    play.style.display = 'block';
-    play.addEventListener('click', () => {
-        video.play();
-        console.log('asdss');        
-    })
+if(windowWidth > 500) {
+    play.style.display = 'none';
+    video.setAttribute('autoplay', true)
 }
+
+play.addEventListener('click', () => {
+    video.play();
+    console.log('asdss');
+    play.style.display = 'none';        
+})
 
 
 //Go to Gallery

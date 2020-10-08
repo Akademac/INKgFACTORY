@@ -44,7 +44,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quibusdam ab invent
 
  typing();
 
- let windowWidth = window.innerWidth
+ let windowWidth = window.innerWidth;
 
 
 if(windowWidth < 1250 || windowWidth > 1500) {
