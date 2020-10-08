@@ -604,6 +604,8 @@ b {
 }
 
 @media screen and (max-width: 400px) {
+
+    /* Header */
     
     li {
         font-size: .8rem;
@@ -615,8 +617,14 @@ b {
         padding-right: .1rem;
     }
 
-    #gallery_btn {
-        padding-left: .2!important;
+    .gallery_btn {
+        padding-left: 1px!important;
+    }
+
+    /* Main logo */
+
+    .main_logo_text {
+        font-size: 2rem;
     }
 
     /* Gallery */
