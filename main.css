@@ -581,6 +581,8 @@ b {
 
     #fifth_div {
         height: 15rem;
+        opacity: .7;
+
     } 
  
     #gallery_h2 {
@@ -627,19 +629,17 @@ b {
         font-size: 2rem;
     }
 
-    
-.logo_up {
-    position: fixed;
-    top: 0rem;
-    font-size: .9rem;
-    padding: 0.2rem 0.5rem;
-    border-radius: 5px;
-    border: 1px solid #BF953F;
-}
+    .logo_up {
+        position: fixed;
+        top: 0rem;
+        font-size: .9rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #BF953F;
+    }
 
     /* Gallery */
 
-    
     #fifth_div_p {
         font-size: .7rem;
         left: 2rem;
@@ -660,6 +660,12 @@ b {
     .about_txt {
         padding: 2rem;
         font-size: 2rem;
+    }
+
+    /* Footer */
+
+    #address, #number, #studio, #academy, #company {
+        font-size: .8rem;
     }
 
 }
