@@ -46,9 +46,3 @@ about_btn.addEventListener('click', () => {
     window.open('about.html', '_self');
 });
 
-let windowWidth = window.innerWidth
-
-
-if(windowWidth < 1300 || windowWidth > 1400) {
-    machine.style.display: 'none';
-}
