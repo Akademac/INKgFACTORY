@@ -29,6 +29,18 @@ home_btn.forEach(e => {
     })
 });
 
+let windowWidth = window.innerWidth;
+let play = document.querySelector('.fa-play');
+
+if(windowWidth < 500) {
+    play.style.display = 'block';
+    play.addEventListener('click', () => {
+        video.play();
+        console.log('asdss');        
+    })
+}
+
+
 //Go to Gallery
 
 let gallery = document.querySelectorAll('.gallery_btn');

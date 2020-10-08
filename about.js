@@ -52,7 +52,12 @@ if(windowWidth < 1250 || windowWidth > 1500) {
     clearInterval(interval);
 }
 
+//go back
 
+let go_back_about = document.querySelector('#go_back_about');
+go_back_about.addEventListener('click', () => {
+    window.open('index.html', '_self');
+});
 
 
 
