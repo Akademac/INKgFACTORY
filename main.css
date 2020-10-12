@@ -425,20 +425,18 @@ b {
 /* Gallery Page */
 
 #gallery_body {
-    overflow: hidden;
-    height: 100%;
+    position: fixed;
 }
 
 
 #container {
     width: calc(21 * 100vw);
-    height: 100vh;
+    height: 100%;
     margin: 0px;
     top: 0;
     left:0;
     position: relative;
     transition: 2s all;
-    overflow: hidden;
 }
 
 .imgs_div {
@@ -507,7 +505,7 @@ b {
     color: #BF953F;
     position: absolute;
     font-size: 2rem;
-    margin: 2rem;
+    margin: .5rem;
     transition: 2s all;
     left: 0;
 }
@@ -525,7 +523,7 @@ b {
 /* About Page */
 
 #go_back_about {
-    margin: .5rem;
+    margin: .2rem;
     color: #BF953F;
     position: absolute;
     font-size: 2rem;
@@ -701,7 +699,8 @@ b {
     /* Footer */
 
     #address, #number, #studio, #academy, #company {
-        font-size: .8rem;
+        font-size: .7rem;
+        margin: 20px auto;
     }
 
 }
