@@ -266,6 +266,7 @@ video {
     font-size: .7rem;
     left: 2rem;
     font-weight: bold;
+    z-index: 1000;
 }
 
 #fifth_div > img {
